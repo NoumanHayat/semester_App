@@ -9,6 +9,7 @@ import {
   SemesterHomeScreen1,
   SplashScreen, 
   SemesterHomeScreen2,
+  BookHomeScreen2,
 } from '../screen/appflow';
 
 import {NavigationContainer} from '@react-navigation/native';
@@ -39,10 +40,11 @@ export default function Navigation() {
         <MainStack.Screen name="SemesterHome" component={SemesterHomeScreen} />
         <MainStack.Screen
           name="SemesterHome1"
-          component={SemesterHomeScreen1}
+          component={SemesterHomeScreen1} 
         />
         <MainStack.Screen name="Bookhome" component={BookHomeScreen} />
         <MainStack.Screen name="Bookhome1" component={BookHomeScreen1} />
+        <MainStack.Screen name="Bookhome2" component={BookHomeScreen2} />
         <MainStack.Screen
           name="PDF"
           component={PDFScreen}

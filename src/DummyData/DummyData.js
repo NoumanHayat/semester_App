@@ -912,7 +912,7 @@ export const Data2 = [
         image: {
           uri: 'https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=1200/api/page/5393602882568192/image/download/6038586442907648',
         },
-        url: 'https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/692/3/Programming-Fundamentals-1570222270.pdf',
+        url: 'https://www.youtube.com/watch?v=zOjov-2OZ0E',
       },
       {
         id: 2,

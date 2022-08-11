@@ -28,8 +28,8 @@ import {
                 semester={item.title}
                 image={item.image}
                 onPress={() =>
-                  navigation.navigate('Bookhome1', {
-                    Books: item.Books,
+                  navigation.navigate('Bookhome2', {
+                    Books: item.Books, 
                   })
                 }
               />
