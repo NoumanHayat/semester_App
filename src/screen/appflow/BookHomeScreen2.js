@@ -1,12 +1,13 @@
 import {StyleSheet, Text, View, FlatList} from 'react-native';
 import React, {useState, useEffect} from 'react';
-import BookCard from '../../components/BookCard';
+import VideoCard from '../../components/VideoCard';
 import {height} from 'react-native-dimension';
+import YoutubePlayer from 'react-native-youtube-iframe'
 const BookHomeScreen1 = ({route, params, navigation}) => {
   const {Books, booktitle} = route.params;
   console.log('aaaaaaaaaaa', Books);
   useEffect(() => {
-    navigation.setOptions({
+    navigation.setOptions({ 
       title: 'NOTES LIST',
     });
   }, []);
@@ -16,15 +17,18 @@ const BookHomeScreen1 = ({route, params, navigation}) => {
         data={Books}
         renderItem={({item}) => (
           <View>
-            {/* <BookCard
+            {/* <YoutubePlayer
+                height={300}
+                play={true}
+                videoId={'mLI_QxszYrU'}
+            /> */}
+            
+            <VideoCard
               semester={item.booktitle}
               CreditHours={item.creditHours}
               CourseCode={item.courseCode}
-              image={item.image}
-              ViewBook={() => navigation.navigate('PDF', {url: item.url})}
-            
-            /> */}
-            <Text>{item.url}</Text> 
+              url={item.url} 
+            />
           </View>
         )}
       />
